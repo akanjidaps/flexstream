@@ -1,0 +1,1475 @@
+html {  
+    scroll-behavior: smooth;  
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home-page {
+    background-image: url(./assets/images/hero-bg.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+.pages {
+    max-height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0 2rem;
+}
+
+header {
+    padding-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.nav-items {
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+.nav-items:hover {
+    color: rgb(226, 215, 3);    
+}
+
+.fa-clapperboard {
+    color: rgb(226, 215, 3);
+    font-size: 3rem;
+}
+
+#logo {
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+.hover-button {
+    font-size: 1rem;
+    padding: 0.5rem 1.7rem;
+    border: 2px solid rgb(226, 215, 3);
+    border-radius: 50px;
+    background: none;
+    color: white;
+}
+
+.hover-button:hover {
+    background-color: rgb(226, 215, 3);
+}
+
+#languages {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: rgb(226, 215, 3);
+    outline: none;
+}
+
+.languages {
+    padding: 0.5rem 0;
+}
+
+header .fa-bars {
+    color: white;
+    display: none;
+}
+
+#first-section {
+    width: 50vw;
+    padding: 0 1rem;
+}
+
+#first-section p {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: rgb(226, 215, 3);
+    margin: 0;
+}
+
+#first-section h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    line-height: 3.5rem;
+}
+
+#first-section h1 > span {
+    color: rgb(226, 215, 3);
+}
+
+#first-section > div {
+    display: flex;
+    margin: 2rem 0;
+}
+
+#first-section div > span {
+    font-size: 1.2rem;
+    padding: 7px 0;
+}
+
+#first-section > div {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-icons {
+    color: rgb(23, 29, 33);
+    font-weight: 800;
+    font-size: 0.7rem;
+    /* margin-right: 0.2rem; */
+    border: none;
+    padding: 6px;
+    background-color: rgb(189, 189, 189);
+}
+
+.translucent-icons {
+    border: 2px solid rgb(189, 189, 189);
+    color: rgb(189, 189, 189);
+    padding:4px 8px;
+    font-weight: 700;
+    font-size: 0.7rem;
+    display: inline-block;   
+}
+
+.homepage-details {
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.fa-calendar-days,.fa-clock {
+    font-size: 0.6rem;
+}
+
+#first-section > div span {
+    color: white;
+}
+
+#watch-now-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2.2rem;
+}
+
+.fa-play {
+    font-size: 0.8rem;   
+}
+
+#watch-now-btn span{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#side-bar {
+    display: none;
+    font-size: 1rem;
+    height: 100vh;
+    width: 70vw;
+    text-align: center;
+}
+
+/* Next Section  */
+
+#upcoming-movies {
+    background-color: rgba(0, 0, 0, 0.952);
+    padding: 6rem 3rem;
+    height: 100vh;
+}
+
+#upcoming-movies > p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgb(226, 215, 3);
+    /* padding-top: 7rem; */
+    font-weight: 700;
+}
+
+#upcoming-movies h2 {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+
+.upcoming-movies-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.upcoming-movies-info > div {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.small-hover-button {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0 20px;
+    border-radius: 25px;
+    background: none;
+    color: white;
+    height: 2.2rem;
+    border: 1px solid rgb(189, 189, 189)
+}
+
+.yellow {
+    border: 1px solid rgb(226, 215, 3);
+}
+
+#upcoming-movies-container {
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    /* max-width: 100vw; */
+    justify-content: space-between;
+    color: white;
+}
+
+.movie-cards {
+    width: 21.5vw;
+}
+
+.movie-images {
+    border-radius: 10px;
+    width: 21.5vw;
+    height: 68vh;
+}
+
+.movie-images:hover {
+    transform: scale(1.02);
+    box-shadow: -5px 5px 9px 5px rgba(192, 190, 190, 0.08), 5px -5px 9px 5px rgba(192, 190, 190, 0.12);
+}
+
+.info-spacing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-titles {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.movie-year {
+    font-size: 1rem;
+    color: rgb(226, 215, 3);
+    text-align: right;
+    font-weight: 600;  
+}
+
+.transparent-icons {
+    border: 2px solid rgb(189, 189, 189);
+    color: rgb(226, 215, 3);
+    padding: 4px 8px;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 0.7rem;
+    /* margin-top: 1rem; */
+    /* width: 2rem; */
+}
+
+.info-spacing:first-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.info-spacing > div:nth-of-type(2) {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.fa-star {
+    font-size: 0.6rem;
+    padding-right: 3px;
+}
+
+/* Next Section */
+
+.upcoming-movie-pages {
+    background-image: url(./assets/images/movie-detail-bg.png);
+    height: 100vh;
+    /* background-color: rgb(72, 138, 214); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    padding: 8rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* display: none; */
+}
+
+.inner-container {
+    height: 32rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.upcoming-movie-images {
+    border-radius: 10px;
+    border-radius: 10px;
+    width: 21.5vw;
+    height: 68vh;
+}
+
+.upcoming-movie-details {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 2rem */
+}
+
+.upcoming-movie-details h3 {
+    padding-top: 1.7rem;
+    font-size: 1.7rem;
+    color: rgb(226, 215, 3);
+    margin: 0;
+}
+
+.upcoming-movie-details h2 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.details-containers {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.middle-details-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-self: center; */
+    width: 11vw;
+}
+
+.upcoming-movie-details > div > span, .upcoming-movie-details p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.black-box {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+    width: 55%;
+    height: 3rem;
+    padding: 1.8rem 0.8rem;
+    border-radius: 7px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.white-font {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.fa-share-nodes {
+    color: rgb(226, 215, 3);
+}
+
+/* #black-box span:first-child {
+    font-size: 1.7rem;
+} */
+
+/* #black-box > div > span {
+    max-
+} */
+
+.font-big {
+    font-size: 1.1rem;
+    /* text-align: center; */
+    width: 11rem; 
+}
+
+/* .collapse {
+    width: 35%;
+} */
+
+.black-box button {
+    padding: 0.8rem 2.3rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.long-btn-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.long-btns {
+    /* max-height: 300px; */
+    height: 250px;
+    color: black;
+    background-color: rgb(226, 215, 3);
+    width: 95px;
+    margin-left: 2rem;
+    writing-mode: vertical-lr;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
+.long-btns > span {
+    text-orientation: upright;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Next Section */
+
+#our-services {
+    background-color: black;
+    padding: 8rem 3rem;
+    display: flex;
+}
+
+#our-services > div {
+    width: 50%;
+}
+
+#service-banner {
+    height: 500px;
+}
+
+#our-services button {
+    /* max-height: 300px; */
+    height: 220px;
+    color: black;
+    background-color: rgb(226, 215, 3);
+    width: 95px;
+    margin-left: 2rem;
+    writing-mode: vertical-lr;
+    border-radius: 10px;
+}
+
+#our-services button > span {
+    text-orientation: upright;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/* #our-services > div :nth-of-type(2) {
+    color: white;
+} */
+
+.info-section {
+    color: white;
+    height: 500px;
+}
+
+.info-section > p:first-of-type {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.info-section > h2 {
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+.info-section > p:nth-of-type(2) {
+    font-size: 1rem;
+}
+
+.info-section > div {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.info-section > div p:first-of-type{
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.icon-decor { 
+    border: 2px dashed rgb(226, 215, 3);
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    padding: 1rem;
+}
+
+.icon-decor > img {
+    height: 40px;
+}
+
+/* .info-section > div p:nth-of-type(2) {
+    margin: 0;
+} */
+
+
+.icon-decor:hover {
+    background-color: rgb(226, 215, 3);
+}
+
+/* Next Section */
+
+
+#top-rated {
+    background-color: rgb(34, 34, 34);
+    max-width: 100vw;
+    margin: 0;
+    padding: 8rem 3rem;
+}
+
+#top-rated-info {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+#top-rated-info > p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(226, 215, 3);
+    font-weight: 700;
+}
+
+#top-rated-info  > h2 {
+    font-size: 2rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 4.5rem;
+}
+
+#top-rated-info > div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.black-btns {
+    padding: 15px 20px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.black-btns:hover {
+    box-shadow: -2px 0px rgb(226, 215, 3), 2px 0px rgb(226, 215, 3);
+    color: rgb(226, 215, 3);
+}
+
+#top-rated-movies-container {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    gap: 25px;  
+}
+
+#tv-series {
+    background-color: black;
+    max-width: 100vw;
+    margin: 0;
+    padding: 8rem 3rem;
+}
+
+#tv-series-info {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+#tv-series-info > p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(226, 215, 3);
+    font-weight: 700;
+}
+
+#tv-series-info  > h2 {
+    font-size: 2rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 4.5rem;
+}
+
+#tv-series-infos > div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#tv-series-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section */
+
+#pricing-plan {
+    background-color: rgb(34, 34, 34);
+    max-width: 100vw;
+    margin: 0;
+    padding: 8rem 3rem;
+}
+
+#pricing-plan-info {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+#pricing-plan-info > p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(226, 215, 3);
+    font-weight: 700;
+}
+
+#pricing-plan-info > h2 {
+    font-size: 2rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 4.5rem;
+    text-align: center;
+}
+
+#pricing-plan-info > div {
+    margin-bottom: 6rem;
+}
+
+#pricing-plan-info > div > span {
+    font-size: 1.2rem;
+    color: white;
+}
+
+#pricing-plan-container {
+    display: flex;
+    flex: 1 1 1;
+    gap: 60px;
+}
+
+.pricing-plan-cards {
+    padding: 3rem;
+    width: 500px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+.pricing-plan-cards > h3 {
+    font-size: 1.5rem;
+    margin: 0;    
+}
+
+.pricing-plan-cards > h4 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.pricing-plan-cards > h2 {
+    font-size: 2rem;
+    margin: 1rem 0;    
+}
+
+.pricing-plan-cards > h2 >span {
+    font-size: 1rem;       
+}
+
+.pricing-plan-cards > ul {
+    list-style-type: none; 
+    text-align: start;
+    font-size: 1.2rem;
+}
+
+.pricing-plan-cards > ul > li {
+    margin: 1rem 0;
+}
+
+.fa-check, .fa-xmark {
+    margin-right: 0.5rem;
+}
+
+.get-started-btn {
+    margin: 2rem;
+    font-size: 1.2rem;
+    background-color: rgb(226, 215, 3);
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2.5rem;
+}
+
+.features-container {
+    color: white;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.features-container > h2{
+    /* font-size: 2.3rem; */
+    
+    font-size: 2rem;
+    margin: 5rem 0;   
+}
+
+.features {
+    display: flex;
+    flex: 1 1 1 1;
+    justify-content: space-between;
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
+.features-cards > div {
+    background-color: rgb(255, 153, 0);
+    border-radius: 50%;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.fa-hand, .fa-cloud-arrow-down, .fa-film, .fa-wifi {
+    font-size: 1.3rem;
+}
+
+.features-cards > h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.features-cards > p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Next Section */
+
+#trial {
+    display: flex;
+    padding: 3rem 6.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(226, 215, 3);
+    background-image: url(./assets/images/cta-bg.jpg);
+    /* height: 100vh; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+/* #trial > div {
+
+} */
+
+#trial h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#trial p {
+    font-size: 0.8rem;
+    /* margin: 0; */
+}
+
+.email-textbox {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#trial-email-textbox {
+    resize: none;
+    height: 45px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    font-size: 1rem;
+    outline: none;
+    padding-left: 1rem;
+}
+
+#get-started-btn-2 {
+    border: none;
+    background-color: black;
+    color: rgb(226, 215, 3);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 18px;
+    height: 50px;
+}
+
+/* Next Section */
+
+#flexstream {
+    background-color: black;
+    padding: 7rem 5rem;
+    /* margin-top: 5rem; */
+}
+
+#flexstream > nav {
+    margin-bottom: 2rem;
+}
+
+#flexstream > div a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#flexstream > div{
+    margin-top: 2.5rem;
+}
+
+.flexstream-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexstream-container > div {
+    display: flex;
+    gap: 10px;
+}
+
+.flexstream-container .nav-items {
+    padding: 0;
+}
+
+.flexstream-container .nav-items > span {
+    font-size: 0.8rem;
+    /* background-color: aqua; */
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    padding: 0.5rem 2.5rem;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.8rem;
+    /* font-weight: 600; */
+}
+
+footer span > span {
+    color: rgb(226, 215, 3);
+}
+
+footer img {
+    width: 20%;
+}
+
+
+/* Mobile View */
+
+@media screen and (max-width:600px) {
+    
+    body {
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    header {
+        padding-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    header > nav {
+        max-width: 100%;
+    }
+
+    #home-page {
+        padding: 0 1.5rem;
+    }
+
+    /* .pages {
+        padding: 0 1.5rem; 
+    } */
+
+
+    #home-page .fa-clapperboard {
+        font-size: 1.5rem;
+    }
+
+    #logo {
+        font-size: 1rem;
+        padding-left: 0.2rem;
+
+    }
+
+    .languages {
+        display: flex;
+        justify-content: space-between;
+        width: 20vw;
+    }
+
+    #home-page .middle-nav {
+        display: none;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    /* First Section */
+
+    #first-section {
+        width: 80vw;
+        padding: 0;
+    }
+
+    #first-section > p {
+        font-size: 1.2rem;
+    }
+
+    #first-section > h1 {
+        font-size: 2.4rem;
+        line-height: 1.1;
+    }
+
+    #first-section > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+        
+    }
+
+    .block-icons , .translucent-icons {
+        font-size: 0.5rem;
+    }
+
+    #first-section > div span {
+        font-size: 0.8rem;
+    }
+
+    .homepage-details {
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    #watch-now-btn {
+        padding: 0.4rem 1.8rem; 
+    }
+
+    #watch-now-btn span {
+        font-size: 0.6rem;
+    }
+
+    /* Next Section  */
+
+    #side-bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;      
+    }
+
+    #side-bar > ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #side-bar a, #side-bar .hover-button {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Upcoming Movies */
+
+    #upcoming-movies {
+        padding: 6rem 1.5rem;
+        height: 355vh;
+    }
+
+    #upcoming-movies > p {
+        font-size: 0.7rem;
+    }
+
+    .upcoming-movies-info{
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    #upcoming-movies > .upcoming-movies-info > h2 {
+        font-size: 1.75rem;
+    }
+
+    .upcoming-movies-info > div {
+        gap: 0.8rem;
+    }
+
+    .small-hover-button {
+        font-size: 0.6rem;
+        padding: 0 1rem;
+    }
+   
+    .small-hover-button > span {
+        display: inline-block;
+        width: 3rem;
+    }
+
+    #upcoming-movies-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .movie-cards {
+        width: 100%;
+    }
+
+    .movie-images, .info-spacing {
+        width: 85vw;
+    }
+
+    /* Next Section */
+
+    .upcoming-movie-pages {
+        padding: 6rem 1.5rem;
+        height: 170vh;
+        justify-content: flex-start;
+    }
+
+    main > section:nth-child(2) {
+        height: 180vh;    
+    }
+
+    main > section:nth-child(3) {
+        height: 200vh;
+    }
+
+    main > section:nth-child(4), main > section:nth-child(7), main > section:nth-child(9), main > section:nth-child(15), main > section:nth-child(17) {
+        height: 160vh;
+    }
+
+    main > section:nth-child(5) {
+        height: 205vh;
+    }
+
+    /* main > section:nth-child(6), main > section:nth-child(8), main > section:nth-child(10), main > section:nth-child(11), main > section:nth-child(12), main > section:nth-child(13), main > section:nth-child(16) {
+        height: 170vh;
+    } */
+
+    main > section:nth-child(14) {
+        height: 165vh;
+    }
+
+    .inner-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .upcoming-movie-pages .movie-cards {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .upcoming-movie-images {
+        width: 55vw;
+        height: 50vh;
+    }
+
+    .upcoming-movie-details {
+        width: 100%;
+    }
+
+    .upcoming-movie-details > h3 {
+        font-size: 1.2rem;
+    }
+
+    .upcoming-movie-details > h2 {
+        font-size: 2.5rem;
+    }
+
+    .details-containers {
+        align-items: normal;
+        gap: 0.4rem;
+        flex-direction: column;
+    }
+
+    .upcoming-movie-details > div > span, .upcoming-movie-details p {
+        font-size: 0.8rem;
+    }
+
+    .middle-details-container {
+        width: 35vw;
+        
+    }
+
+    .white-font {
+        font-size: 0.8rem;
+    }
+
+    .black-box {
+        width: 100%;
+        font-size: 0.6rem;
+        box-sizing: border-box;
+        height: 10rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* flex-direction: column; */
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .font-big {
+        font-size: 0.8rem;
+        width: 8rem;
+        order: -1;
+        /* grid-column: 1 / span 2; */
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    .black-box > div:nth-child(1), .black-box button {
+        width: 6rem;
+        justify-self: center;
+    }
+
+    .black-box > div:nth-child(1) > div {
+        display: inline-block;
+    }
+
+    .black-box button {
+        padding: 0.2rem;
+        font-size: 0.6rem;
+    }
+
+    .fa-play {
+        font-size: 0.6rem;
+    }
+
+    .long-btn-containers {
+        flex-direction: row;
+        justify-content: start;
+    }
+    
+    .long-btns {
+        height: 50px;
+        width: 100%;
+        margin: 0;
+        writing-mode: horizontal-tb;
+        border-radius: 10px;
+        align-self: flex-end;
+    }
+    
+    .long-btns > span {
+        text-orientation: mixed;
+        font-size: 0.8rem;
+        /* margin-bottom: 1rem; */
+    }
+
+    .long-btn-containers img {
+        height: 0.8rem;
+    }
+
+    /* Our Services */
+
+    #our-services {
+        padding: 4rem 1.5rem;
+        flex-direction: column;
+    }
+
+    #our-services > div {
+        width: 100%;
+    }
+
+    #our-services > div:first-of-type {
+        display: flex;
+        height: 35vh;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #service-banner {
+        height: 35vh;
+    }
+
+    #our-services button {
+        margin: 0;
+        height: 35vh;
+    }
+
+    #our-services button > span {
+        font-size: 0.6rem;
+    }
+
+    #our-services button > img {
+        height: 1rem;
+    }
+
+    /* .info-section {
+        width: 100%;
+    } */
+
+    .info-section > p:first-of-type {
+        font-size: 0.8rem;    
+    }
+
+    .info-section > h2 {
+        font-size: 1.8rem;
+        line-height: 1.1;  
+    }
+
+    .info-section > p:last-of-type {
+        font-size: 0.9rem;    
+    }
+
+    .icon-decor {
+        align-self: center;
+    }
+
+    .info-section > div p:first-of-type {
+        font-size: 0.8rem;
+    }
+
+    .info-section > div p:nth-of-type(2) {
+        font-size: 0.7rem;
+    }
+
+    /* Next Section */
+
+    #top-rated {
+        padding: 4rem 1.5rem;
+        /* flex-direction: column; */
+    }
+
+    #top-rated-info > p {
+        font-size: 0.7rem;
+    }
+
+    #top-rated-info > h2 {
+        font-size: 1.75rem;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    #top-rated-info > div {
+        display: grid;
+        grid-template: auto auto / auto auto;
+        column-gap: 2rem;
+        row-gap: 1rem;
+        /* width: 100%; */
+    }
+
+    .black-btns {
+        font-size: 0.6rem;
+        padding: 0.6rem 1.2rem;
+        width: 5rem;
+    }
+
+    #top-rated-movies-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Next Section */
+
+    #tv-series {
+        padding: 4rem 1.5rem;
+    }
+
+    #tv-series-info > p {
+        font-size: 0.7rem;
+    }
+
+    #tv-series-info > h2 {
+        font-size: 1.5rem;
+    }
+
+    #tv-series-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Next Section */
+
+    #pricing-plan {
+        padding: 4rem 1.5rem;
+    }
+
+    #pricing-plan-info > p {
+        font-size: 0.7rem;
+    }
+
+    #pricing-plan-info > h2 {
+        font-size: 1.6rem;
+    }
+
+    #pricing-plan-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem;
+        /* width: 100%; */
+    }
+
+    .pricing-plan-cards {
+        padding: 2rem;
+        width: auto;
+    }
+    
+    .pricing-plan-cards > h3 {
+        font-size: 1.2rem;
+    
+    }
+    
+    .pricing-plan-cards > h4 {
+        font-size: 0.9rem;
+        font-weight: normal;
+    }
+    
+    .pricing-plan-cards > h2 {
+        font-size: 1.75rem;    
+    }
+    
+    .pricing-plan-cards > h2 >span {
+        font-size: 0.9rem;       
+    }
+    
+    .pricing-plan-cards > ul {
+        list-style-type: none; 
+        text-align: start;
+        font-size: 0.9rem;
+        padding: 1rem 0;
+        margin-top: 0;
+    }
+    
+    .pricing-plan-cards > ul > li {
+        font-size: 0.9rem;
+    }
+
+    /* .pricing-plan-cards > a {
+        text-align: center;
+    } */
+
+    .get-started-btn {
+        padding: 0.5rem 2.4rem;
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+
+    .features-container > h2 {
+        font-size: 1.5rem;
+        margin: 5rem 0;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .features-cards {
+        display: grid;
+        grid-template-columns: 1fr 3.8fr;
+        grid-template-rows: 1fr 1fr;
+        height: 3.5rem;
+        column-gap: 0.5rem;
+    }
+
+    .features-cards > div {
+        grid-row: span 2;
+    }
+
+    .features-cards > h3, .features-cards > p {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    /* Next Section */
+    #trial {
+        padding: 3rem 1.5rem;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #trial h3 {
+        font-size: 1rem;
+    }
+
+    #trial p {
+        font-size: 0.6rem;
+    }
+
+    #trial-email-textbox {
+        width: auto;
+    }
+
+    #get-started-btn-2 {
+        font-size: 0.7rem;
+        padding: 0;
+        font-weight: 600;
+    }
+
+    /* Next Section */
+    #flexstream {
+        padding: 4rem 1.5rem;    
+    }
+
+    #flexstream > nav > div:first-of-type {
+        display: none;
+    }
+
+    #flexstream .middle-nav {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #flexstream .middle-nav > a {
+        font-size: 0.6rem;
+        padding: 0;
+    }
+
+    .flexstream-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #flexstream > div {
+        margin-top: 1rem;
+    }
+    
+    /* Next Section */
+    footer {
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
+    footer > img {
+        order: -1;
+        width: 80%;
+    }
+}
