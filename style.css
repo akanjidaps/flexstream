@@ -1400,6 +1400,8 @@ footer img {
 
     .features-cards > div {
         grid-row: span 2;
+        height: 24px;
+        width: 24px;
     }
 
     .features-cards > h3, .features-cards > p {
@@ -1428,7 +1430,7 @@ footer img {
 
     #get-started-btn-2 {
         font-size: 0.7rem;
-        padding: 0;
+        padding: 0 0.5rem;
         font-weight: 600;
     }
 
